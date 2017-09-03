@@ -3,8 +3,8 @@ body{
 	width: 100%;
 	background-image: url("../Images/enter_page_background.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	position: fixed;
+	background-position: fixed;
+	overflow:hidden;
 	font-family: 'Ubuntu', sans-serif;
 
  
@@ -38,8 +38,4 @@ input::-webkit-input-placeholder {
 	margin-top: 20%;
 
 	
-}
-
-img {
-
 }
