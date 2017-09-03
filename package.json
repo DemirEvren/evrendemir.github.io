@@ -5,10 +5,8 @@
   "engines": {
     "node": "6.11.1"
   },
-  "main": "Enter.html",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "2.5.6",
@@ -22,11 +20,6 @@
     "type": "git",
     "url": "https://github.com/DemirEvren/demirevren.com"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "author": "Demir Evren",
-  "license": "MIT"
+  "license": "ISC"
 }
