@@ -5,7 +5,6 @@ app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static(__dirname));
 
-
 //routes
 // views is directory for all template files
 

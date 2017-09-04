@@ -1,14 +1,48 @@
 body{
-	height: 100%;
-	width: 100%;
 	background-image: url("../Images/enter_page_background.jpg");
 	background-repeat: no-repeat;
 	background-position: fixed;
 	overflow:hidden;
 	font-family: 'Ubuntu', sans-serif;
+}
 
- 
 
+
+@media screen and (max-width: 600px){
+	body{
+		
+		background-image: url("../Images/enter_page_background.jpg");
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-position: fixed;
+	}
+
+
+input{
+	height: 40px;
+	width: 265px;
+	border-radius: 2px;
+	border-color:  transparent;
+	padding-left: 10px;
+    background-image: url("../Images/password_icon.png");
+    background-repeat: no-repeat;
+    background-position: 2px 10px;
+    text-indent: 30px;
+    margin: 0 auto;
+}
+.middle_class{
+	text-align: center;
+	margin: 0 auto;
+	left: 50%;
+	right: 50%;
+	margin-top: 250px;
+}
+}
+@media screen and (min-width: 600px){
+
+input::-webkit-input-placeholder {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
 }
 
 input{
@@ -22,20 +56,12 @@ input{
     background-repeat: no-repeat;
     background-position: 2px 10px;
     text-indent: 30px;
-
-}
-input::-webkit-input-placeholder {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 15px;
+    margin: 0 auto;
 }
 
 .middle_class{
 	text-align: center;
-	width:17%;
-	margin: 0 auto;
-	left: 50%;
-	right: 50%;
-	margin-top: 20%;
-
-	
+	margin: 20px auto;
+	margin-top: 400px;	
+}
 }
