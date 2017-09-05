@@ -3,16 +3,46 @@
 <head>
 	<title>Evren Demir</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="shortcut icon" href="Images/black_arrow.png">
-	<link rel="stylesheet" type="text/css" href="Design/Enter.css">
+	<link rel="shortcut icon" type="image/x-icon" href="Images/black_arrow.png">
+	<link rel="stylesheet" type="text/css" href="css/Enter.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
 	<div class="middle_class">
-		<input type="password" id="enter_input" name="enter_input" placeholder="Password" required >
-	
+		<input  type="password" id="enter_input" name="enter_input" placeholder="Password" required >
+		<p id="wrong_input" hidden >Please try again!</p>
 	</div>
 </body>
+<script type="text/javascript">
+		
+		var password = "evrendemir";
+		var ifWrong = false;
+		$("#enter_input").keyup(function(e){
+		 	
+		 	var code = e.which; // no more e.keycode
+		 	if(code == 13 && $("#enter_input").val() == password) { //Enter keycode 13 is keycode for the enter button
+		   		window.location.href="Views/homepage.html";
+		   		$('#wrong_input').hidden();
+		 	} else if (code == 13 && $("#enter_input").val() != password){
+		 		ifWrong = true;
+		 		$('#wrong_input').fadeIn(500);
+		 	}
+		 	if(code == 8 && ifWrong == true){
+		 		$('#wrong_input').fadeOut(500);
+		 	}
+
+		 	$("#enter_input").css({
+		   		'background-image' : '../Images/grey_arrow.png',
+		   		'background-repeat': 'no-repeat',
+		   		'background-position' : '2px 10px right'
+			});
+		 
+});
+
+
+
+
+</script>
 
 </html>
