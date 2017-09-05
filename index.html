@@ -12,6 +12,7 @@
 	<div class="middle_class">
 		<input  type="password" id="enter_input" name="enter_input" placeholder="Password" required >
 		<p id="wrong_input" hidden >Please try again!</p>
+
 	</div>
 </body>
 <script type="text/javascript">
@@ -26,6 +27,16 @@
 		   		$('#wrong_input').hidden();
 		 	} else if (code == 13 && $("#enter_input").val() != password){
 		 		ifWrong = true;
+				$('#wrong_input').css({
+						'background-color': '#d03e37',
+						'color': 'white',
+						'width': '279px',
+						'height': '30px',
+						'border-radius': '2px',
+						'padding-top': '10px',
+						'margin': '0 auto',
+						'margin-top': '0px'
+				});
 		 		$('#wrong_input').fadeIn(500);
 		 	}
 		 	if(code == 8 && ifWrong == true){

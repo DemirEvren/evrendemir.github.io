@@ -35,7 +35,7 @@ input{
 	margin: 0 auto;
 	left: 50%;
 	right: 50%;
-	margin-top: 250px;
+	margin-top: 230px;
 }
 }
 @media screen and (min-width: 600px){
@@ -64,13 +64,4 @@ input{
 	margin: 20px auto;
 	margin-top: 400px;	
 }
-#wrong_input{
-	background-color: #d03e37;
-	color: white;
-	width: 279px;
-	height: 30px;
-	border-radius: 2px;
-	padding-top: 10px;
-	margin:0 auto;
-	margin-top: 0px;
 }
