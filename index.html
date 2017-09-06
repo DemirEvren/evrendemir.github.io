@@ -32,15 +32,8 @@
 		   				window.location.href="Views/homepage.html";
 		   		} else if ($('#submit_button').data('clicked') && $('#enter_input').val() != password){
 		 		ifWrong = true;
-				$('#wrong_input').css({
-						'background-color': '#d03e37',
-						'color': 'white',
-						'width': '279px',
-						'height': '30px',
-						'border-radius': '2px',
-						'padding-top': '10px'
-				});
 		 		$('#wrong_input').fadeIn(700);
+		 		
 		 	}
 			});
 
@@ -80,7 +73,7 @@
 		 		}
 		 	
 
-		 	// if submit button is clicked make dat true
+		 	// if submit button is clicked make that true
 		 	
 		 	var code = e.which; // no more e.keycode
 		 	if(code == 13 && $("#enter_input").val() == password) { //Enter keycode 13 is keycode for the enter button
