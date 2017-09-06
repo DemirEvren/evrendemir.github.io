@@ -10,9 +10,12 @@
 </head>
 <body>
 	<div class="middle_class">
-		<div><input  type="password" id="enter_input" name="enter_input" placeholder="Password" required ></div>
+		
+		<div class="block"><input  type="password" id="enter_input" name="enter_input" placeholder="Password" required ></div>
 		<div><button hidden type="submit" name="submit_button" id="submit_button"></div>
-		<p id="wrong_input" hidden >Please try again!</p>
+		<div class="block"><p id="wrong_input" hidden>Please try again!</p></div>
+		
+		
 
 	</div>
 </body>
@@ -25,9 +28,9 @@
 		$('#submit_button').click(function(){
   				
   				$(this).data('clicked', true);
-  				if($('#submit_button').data('clicked') && $("#enter_input").val() == password) {
+  				if($('#submit_button').data('clicked') && $('#enter_input').val() == password) {
 		   				window.location.href="Views/homepage.html";
-		   		} else if ($('#submit_button').data('clicked') && $("#enter_input").val() != password){
+		   		} else if ($('#submit_button').data('clicked') && $('#enter_input').val() != password){
 		 		ifWrong = true;
 				$('#wrong_input').css({
 						'background-color': '#d03e37',
@@ -35,15 +38,17 @@
 						'width': '279px',
 						'height': '30px',
 						'border-radius': '2px',
-						'padding-top': '10px',
-						'margin': '0 auto',
-						'margin-top': '0px'
+						'padding-top': '10px'
 				});
 		 		$('#wrong_input').fadeIn(700);
 		 	}
 			});
 
-		$("#enter_input").keyup(function(e){
+		$('#submit_button').hover(function() {
+  			$(this).css('border-color', 'grey');
+		});
+
+		$('#enter_input').keyup(function(e){
 		 	counter++;
 
 		 	//	multiple backgrounds
@@ -66,7 +71,8 @@
 		 			'margin-bottom': '0px',
 		 			'background-image': 'url("Images/black_arrow.png")',
 		 			'background-repeat': 'no-repeat',
-		 			'background-position': '6px 10px'
+		 			'background-position': '6px 10px',
+		 			'float': 'left'
 		 		});
 		 		$('#submit_button').fadeIn(600);
 		 	} else{
