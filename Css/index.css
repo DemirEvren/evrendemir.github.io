@@ -151,15 +151,10 @@ input{
 }
 
 body{
-	background-image: url("../Images/city_of_light.jpg");
-	background-repeat: no-repeat;
+	background: url("../Images/city_of_light.jpg")no-repeat;
 	background-position: fixed;
 	background-size: cover;
 	font-family: 'Ubuntu', sans-serif;
-	margin: 0px;
-	height: 100%;
-	width: 100%;
-
 }
 
 
@@ -232,8 +227,7 @@ body{
 }
 
 body{
-	background-image: url("../Images/city_of_light.jpg");
-	background-repeat: no-repeat;
+	background: url("../Images/city_of_light.jpg") no-repeat;
 	background-position: fixed;
 	background-size: cover;
 	font-family: 'Ubuntu', sans-serif;
@@ -249,7 +243,7 @@ body{
 .animate_name{
 	list-style: none;	
 	position: absolute;
-	left: 20%;
+	left: 18%;
 	top: 10%;
 }
 
@@ -274,7 +268,7 @@ body{
 }
 
 .bottom_div{
-	padding-left: 18%;
+	padding-left: 12%;
 }	
 
 .navigation_element{

@@ -79,17 +79,11 @@ $( document ).ready(function() {
 				$(".navigation_element").mouseover(function() {
    					 $(this).css("background-color","transparent");
 				}).mouseout(function() {
-    				$(this).css("background-color","rgba(255, 255, 255, 0.2)");   				
+    				$(this).css("background-color","rgba(255, 255, 255, 0.4)");   				
 				});
 
 				$('.navigation_element').click(function(){
 		 		var href = $(this).attr('href');
 		 		$(href).fadeIn(700);
-
-		 		$(function(){
-		 			setTimeout(function(){
-		 				$('.animate_name').removeClass('hidden');
-		 			},500);
-		 		});
 			});
 });
