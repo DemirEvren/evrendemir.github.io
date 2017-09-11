@@ -1,6 +1,6 @@
 		
 $( document ).ready(function() {
-		
+
 		var password = "evrendemir";
 		var ifWrong = false;
 		var counter = 0;
@@ -76,7 +76,7 @@ $( document ).ready(function() {
 			// });
 });
 				
-				$(".navigation_element").mouseover(function() {
+				$(".a_element").mouseover(function() {
    					 $(this).css("background-color","rgba(255, 255, 255, 0.5)");
 				}).mouseout(function() {
     				$(this).css("background-color","rgba(255, 255, 255, 0.3)");   				
@@ -93,4 +93,9 @@ $( document ).ready(function() {
 
 				e.preventDefault(); // default is direkt naar de href gaan van het geklikte element
 			});
+ 
+ 			//Go to top of the page when refreshed or page opened
+ 			$(function() {
+   				$('body').scrollTop(0);
+});
 });
