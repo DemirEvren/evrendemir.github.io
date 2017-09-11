@@ -142,6 +142,9 @@ input{
  	display: block;
 }*/
 
+/*Web browsers*/
+@media screen and (min-width: 600px){
+
 *{
 	padding: 0;
 	margin: 0;
@@ -219,5 +222,79 @@ body{
 	padding-top: 30px;
 }
 
+}
+
+@media screen and (max-width: 600px){
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-image: url("../Images/city_of_light.jpg");
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0px;
+
+}
 
 
+.top_div{
+	height: 100px; 
+}
+
+.animate_name{
+	list-style: none;	
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+
+.animate_name li{
+	display: inline-block;
+	margin-right: 3px;
+	font font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	color: white;
+	opacity: 0.7;
+}
+
+.animate_name.hidden{
+	opacity: 0;
+}
+
+#evren_demir{
+	font-size: 45px;
+	margin: 0 auto;
+	text-align: center;
+	color: 	white;
+}
+
+.bottom_div{
+	padding-left: 18%;
+}	
+
+.navigation_element{
+	text-align: center;
+	height: 60px;
+	width: 120px;
+	border-radius: 4px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.a_element{
+	text-decoration: none;
+	color: 	white;
+	padding-top: 30px;
+}
+
+}
