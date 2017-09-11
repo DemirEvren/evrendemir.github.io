@@ -145,18 +145,22 @@ input{
 /*Web browsers*/
 @media screen and (min-width: 600px){
 
-*{
-	padding: 0;
-	margin: 0;
-}
 
-body{
-	background: url("../Images/city_of_light.jpg")no-repeat;
-	background-position: fixed;
-	background-size: cover;
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
 }
 
+
+.intro{
+	background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
 
 .top_div{
 	height: 100px;
@@ -182,10 +186,6 @@ body{
 	opacity: 0.7;
 }
 
-.animate_name.hidden{
-	opacity: 0;
-}
-
 #evren_demir{
 	font-size: 45px;
 	margin: 0 auto;
@@ -195,7 +195,7 @@ body{
 
 .bottom_div{
 	padding-left: 18%;
-	padding-top: 10%;
+	padding-top: 8%;
 }	
 
 .navigation_element{
@@ -226,15 +226,20 @@ body{
 	margin: 0;
 }
 
-body{
-	background: url("../Images/city_of_light.jpg") no-repeat;
-	background-position: fixed;
-	background-size: cover;
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
-	margin: 0px;
-
 }
 
+
+.intro{
+	background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;
+	height: 100%;
+	width: 100%;
+}
 
 .top_div{
 	height: 100px; 
@@ -288,7 +293,15 @@ body{
 .a_element{
 	text-decoration: none;
 	color: 	white;
-	padding-top: 30px;
 }
 
+}
+
+
+img{
+	padding-bottom: 20px;
+}
+
+.explore{
+	height: 900px;
 }

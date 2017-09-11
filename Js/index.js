@@ -77,13 +77,20 @@ $( document ).ready(function() {
 });
 				
 				$(".navigation_element").mouseover(function() {
-   					 $(this).css("background-color","transparent");
+   					 $(this).css("background-color","rgba(255, 255, 255, 0.5)");
 				}).mouseout(function() {
-    				$(this).css("background-color","rgba(255, 255, 255, 0.4)");   				
+    				$(this).css("background-color","rgba(255, 255, 255, 0.3)");   				
 				});
 
-				$('.navigation_element').click(function(){
-		 		var href = $(this).attr('href');
-		 		$(href).fadeIn(700);
+
+				// animate scrolling 
+				$('.a_element').click(function(e){
+
+					var href = $(this).attr('href');
+				$('html , body').animate({
+					scrollTop: $(href).offset().top // top is the value of elemt starting from the top
+				},1000); 
+
+				e.preventDefault(); // default is direkt naar de href gaan van het geklikte element
 			});
 });
