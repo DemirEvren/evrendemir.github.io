@@ -2,98 +2,85 @@
 <html>
 <head>
 	<title>Evren Demir</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="shortcut icon" type="image/x-icon" href="Images/black_arrow.png">
-	<link rel="stylesheet" type="text/css" href="Css/Enter.css">
+	<link rel="stylesheet" type="text/css" href="Css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	
+	<script type="text/javascript" src="Js/index.js"></script></script>
 </head>
 <body>
-	<div class="middle_class">
+	<!-- <div class="middle_class">
 		
 		<div class="block"><input  type="password" id="enter_input" name="enter_input" placeholder="Password" required ></div>
 		<div><button hidden type="submit" name="submit_button" id="submit_button"></div>
 		<div class="block"><p id="wrong_input" hidden>Please try again!</p></div>
-		
-		
+	</div> -->
 
+
+	<div class="top_div" >
+		<ul class="animate_name">
+			<li>E</li>
+			<li>v</li>
+			<li>r</li>
+			<li>e</li>
+			<li>n</li>
+			<li></li>
+			<li>D</li>
+			<li>e</li>
+			<li>m</li>
+			<li>i</li>
+			<li>r</li>
+		</ul>
 	</div>
+
+
+	<div class="bottom_div" >
+
+		<div class="navigation_element" id="about_me">
+			<img src="Images/face.png">
+			<div>
+				<a class="a_element" href="#about_me">About me</a>
+			</div>
+		</div>
+
+		<div class="navigation_element" id="experience">
+			<img src="Images/experience.png">
+			<div>
+				<a class="a_element" href="#experience">Experience</a>
+			</div>
+		</div>
+
+		<div class="navigation_element" id="languages">
+			<img src="Images/language.png">
+			<div>
+				<a class="a_element" href="#languages">Languages</a> 
+			</div>
+		</div>
+
+		<div class="navigation_element" id="work">
+			<img src="Images/work.png">
+			<div>
+				<a class="a_element" href="#work">Work</a>
+			</div>
+		</div>
+
+		<div class="navigation_element" id="mini_games">
+			<img src="Images/games.png">
+			<div>
+				<a class="a_element" href="#mini_games">Mini Games</a>
+			</div>
+		</div>
+
+		<div class="navigation_element" id="contact">
+			<img src="Images/contact.png">
+			<div>
+				<a class="a_element" href="#contact">Contact</a>
+			</div>
+		</div>
+	</div>
+
 </body>
-<script type="text/javascript">
-		
-		var password = "evrendemir";
-		var ifWrong = false;
-		var counter = 0;
-
-		$('#submit_button').click(function(){
-  				
-  				$(this).data('clicked', true);
-  				if($('#submit_button').data('clicked') && $('#enter_input').val() == password) {
-		   				window.location.href="Views/homepage.html";
-		   		} else if ($('#submit_button').data('clicked') && $('#enter_input').val() != password){
-		 		ifWrong = true;
-		 		$('#wrong_input').fadeIn(700);
-		 		
-		 	}
-			});
-
-		$('#submit_button').hover(function() {
-  			$(this).css('border-color', 'grey');
-		});
-
-		$('#enter_input').keyup(function(e){
-		 	counter++;
-
-		 	//	multiple backgrounds
-		 	/*$('input').css({
-		 		'background-image': $('input').css('background-image') + ', url("Images/grey_arrow.png")',
-		 		'background-repeat': $('input').css('background-repeat') + ', no-repeat',
-		 		'background-position':$('input').css('background-position') +  ', right',
-		 	
-		 	});*/
-
-		 	if( $('#enter_input').val() != ""){
-		 		$('#submit_button').css({
-		 			'background-color': 'white',
-		 			'color': 'white',
-		 			'height': '46px',
-		 			'width': '40px',
-		 			'border': 'none',
-		 			'border-bottom-right-radius': '2px',
-		 			'border-top-right-radius': '2px',
-		 			'margin-bottom': '0px',
-		 			'background-image': 'url("Images/black_arrow.png")',
-		 			'background-repeat': 'no-repeat',
-		 			'background-position': '6px 10px',
-		 			'float': 'left'
-		 		});
-		 		$('#submit_button').fadeIn(600);
-		 	} else{
-		 		$('#submit_button').fadeOut(600);
-		 		}
-		 	
-
-		 	// if submit button is clicked make that true
-		 	
-		 	var code = e.which; // no more e.keycode
-		 	if(code == 13 && $("#enter_input").val() == password) { //Enter keycode 13 is keycode for the enter button
-		   		window.location.href="Views/homepage.html";
-		  
-		 	} else if (code == 13 && $("#enter_input").val() != password){ // if password is wrong 
-		 		ifWrong = true;
-		 		$('#wrong_input').fadeIn(700);
-		 	}
-		 	if(code == 8 && ifWrong == true){
-		 		$('#wrong_input').fadeOut(700);
-		 	}
-
-		 	$("#enter_input").css({
-		   		'background-image' : '../Images/grey_arrow.png',
-		   		'background-repeat': 'no-repeat',
-		   		'background-position' : '2px 10px right'
-			});
-		 
-});
-</script>
-
 </html>
