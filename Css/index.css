@@ -170,10 +170,8 @@ html,body{
 
 .animate_name{
 	list-style: none;
-	position: absolute;
-	left: 50%;
-	top:20%;
-	transform: translateX(-50%) translateY(-50%);
+	margin-top:100px;
+	text-align: center;
 }
 
 .animate_name li{
@@ -194,17 +192,16 @@ html,body{
 }
 
 .bottom_div{
-	padding-left: 18%;
-	padding-top: 8%;
+	text-align:center;
+     display: block;
 }	
 
-a{
-	display: block;	
+a{	
+	display: inline-block;
 	text-align: center;
 	height: 80px;
 	width: 150px;
 	border-radius: 4px;
-	float: left;
 	padding-bottom: 20px;
 	margin-top: 80px;
 	margin-right: 20px;
@@ -212,6 +209,12 @@ a{
 	text-decoration: none;
 	color: 	white;
 	padding-top: 30px;
+
+}
+
+.element_div{
+	display: inline-block;
+
 }
 }
 @media screen and (max-width: 600px){
@@ -242,9 +245,8 @@ html,body{
 
 .animate_name{
 	list-style: none;	
-	position: absolute;
-	left: 18%;
-	top: 6%;
+	text-align: center;
+	padding: 30px;
 }
 
 .animate_name li{
@@ -268,9 +270,13 @@ html,body{
 }
 
 .bottom_div{
-	padding-left: 12%;
+	text-align:center;
+     display: block;
 }	
+.element_div{
+	display: inline-block;
 
+}
 a{
 	display: block;
 	text-decoration: none;
