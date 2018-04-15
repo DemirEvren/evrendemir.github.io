@@ -4,17 +4,47 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
+	overflow:hidden;
 }
 
-
+#particles-js{
+	height:100px;
+}
 .intro{
-	background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;
+	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
+	background-color:  #1F2833;
 	height: 100%;
 	width: 100%;
+	padding-top: 15%;
 }
 
-#development-sign{
-	padding-left: 42%;
-	padding-top: 3%;
-	font-size: 20px;
+.class-align-center{
+	width: 38em;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #1F3f38;
 }
+
+#before-proceeding{
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	color: white;
+}
+
+#button-below-text{
+	color: white;
+	padding-bottom:20px;
+	padding-left: 10px;
+	
+}
+
+#index-page-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top:3px;
+	padding-bottom: 3px;
+}
+
