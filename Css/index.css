@@ -10,6 +10,53 @@ html,body{
 #particles-js{
 	height:100px;
 }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+		.intro{
+	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
+	background-color:  #1F2833;
+	height: 100%;
+	width: 100%;
+	padding-top: 20%;
+}
+.class-align-center{
+	width: 20em;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #1F3f38;
+}
+
+#before-proceeding{
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	color: white;
+}
+
+#button-below-text{
+	font-size: 12px;
+	color: white;
+	padding-bottom:20px;
+	padding-left: 10px;
+	
+}
+
+#index-page-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top:3px;
+	border-radius: 2px;
+
+}	
+} 
+
+@media (min-width: 576px) {
 .intro{
 	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
 	background-color:  #1F2833;
@@ -47,4 +94,92 @@ html,body{
 	padding-top:3px;
 	padding-bottom: 3px;
 }
+}
 
+
+/*Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+.intro{
+	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
+	background-color:  #1F2833;
+	height: 100%;
+	width: 100%;
+	padding-top: 15%;
+}
+
+.class-align-center{
+	width: 38em;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #1F3f38;
+}
+
+#before-proceeding{
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	color: white;
+}
+
+#button-below-text{
+	color: white;
+	padding-bottom:20px;
+	padding-left: 10px;
+	
+}
+
+#index-page-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top:3px;
+	padding-bottom: 3px;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+.intro{
+	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
+	background-color:  #1F2833;
+	height: 100%;
+	width: 100%;
+	padding-top: 15%;
+}
+
+.class-align-center{
+	width: 38em;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #1F3f38;
+}
+
+#before-proceeding{
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	color: white;
+}
+
+#button-below-text{
+	color: white;
+	padding-bottom:20px;
+	padding-left: 10px;
+	
+}
+
+#index-page-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top:3px;
+	padding-bottom: 3px;
+}
+}
