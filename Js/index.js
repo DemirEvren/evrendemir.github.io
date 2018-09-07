@@ -7,17 +7,12 @@ $(document).ready(function () {
    //BREATHING NAME ANIMATION
     $('#breathing_name').ready(function () {
 
-
         var unevennumbers = 1;
         for (var counter = 0; counter <=10; counter++){
             $('.breather2').fadeOut(1000, function () {});
             $('.breather2').fadeIn(1000, function () {});
 
-
-
-
             }
-
     });
 
     // MAKE NAVIGATION ANIMATED
