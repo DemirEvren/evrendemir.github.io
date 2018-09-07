@@ -1,4 +1,9 @@
 html,body{
+	background: url("../pictures/IMG-20180714-WA0061.jpeg") no-repeat, fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -6,180 +11,94 @@ html,body{
 	font-family: 'Ubuntu', sans-serif;
 	overflow:hidden;
 }
-
-#particles-js{
-	height:100px;
-}
-
-/*Extra small devices (portrait phones, less than 576px)*/
-/* No media query since this is the default in Bootstrap*/
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-		.intro{
-	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
-	background-color:  #1F2833;
+#header-div{
+	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
-	padding-top: 20%;
+	background-color: rgba(0,0,0,0.80);
+	position: absolute;
+
 }
-.class-align-center{
-	width: 20em;
+
+#name{
+	color: white ;
+	font-family: 'Exo 2', sans-serif;
+	width: 120px;
+	font-size: 25px;
+	padding-left: 50px;
+	margin-top: 30px;
+	transform: rotate(26deg);
+}
+span{
+	font-size: 40px;
+}
+
+.breather{
+	float:left;
+	margin-left: 6px;
+	font-size: 50px;
+}
+.breather2{
+	position: relative;
+	display: none;
+}
+
+#breathing_name{
+	color: white;
+	font-family: 'Exo 2', sans-serif;
+	width: 420px;
+	background-color: blue;
 	margin: 0 auto;
-	border-radius: 5px;
+	margin-top: 3%;
+
+}
+#navigation-bar {
+	margin-top: 16%;
+	height: 12em;
+	font-size: 50px;
 	text-align: center;
-	background-color: #1F3f38;
+
 }
-
-#before-proceeding{
-	font-size: 18px;
-	padding-top: 20px;
-	padding-bottom:10px;
-	padding-left: 10px;
-	color: white;
-}
-
-#button-below-text{
-	font-size: 12px;
-	color: white;
-	padding-bottom:20px;
-	padding-left: 10px;
-	
-}
-
-#index-page-button{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-top:3px;
-	border-radius: 2px;
-
-}	
-} 
-
-@media (min-width: 576px) {
-.intro{
-	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
-	background-color:  #1F2833;
-	height: 100%;
-	width: 100%;
-	padding-top: 15%;
-}
-
-.class-align-center{
-	width: 38em;
+#outer{
+	width: 1100px;
 	margin: 0 auto;
+	position: relative;
+
+}
+.navigation-list-item{
+	color: White;
+	padding: 1.3em;
+	margin-top: 1.8em;
+	float: left;
+	height: 4em;
+	width: 8em;
 	border-radius: 5px;
-	text-align: center;
-	background-color: #1F3f38;
+	font-family: 'Prompt', sans-serif;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.60);
+
 }
 
-#before-proceeding{
-	font-size: 30px;
-	padding-top: 20px;
-	padding-bottom:10px;
-	padding-left: 10px;
-	color: white;
+.navigation-list-item:nth-child(1), .navigation-list-item:nth-child(2), .navigation-list-item:nth-child(3){
+	margin-right: 5em;
 }
 
-#button-below-text{
-	color: white;
-	padding-bottom:20px;
-	padding-left: 10px;
-	
-}
-
-#index-page-button{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-top:3px;
-	padding-bottom: 3px;
-}
-}
-
-
-/*Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }*/
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-
-.intro{
-	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
-	background-color:  #1F2833;
-	height: 100%;
-	width: 100%;
-	padding-top: 15%;
-}
-
-.class-align-center{
-	width: 38em;
+#footer{
+	width: 950px;
+	height: 20px;
 	margin: 0 auto;
-	border-radius: 5px;
-	text-align: center;
-	background-color: #1F3f38;
-}
-
-#before-proceeding{
-	font-size: 30px;
-	padding-top: 20px;
-	padding-bottom:10px;
-	padding-left: 10px;
 	color: white;
 }
 
-#button-below-text{
-	color: white;
-	padding-bottom:20px;
-	padding-left: 10px;
-	
+#quote{
+	margin-bottom: 5em;
 }
-
-#index-page-button{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-top:3px;
-	padding-bottom: 3px;
-}
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
-.intro{
-	/*background: url("../Images/city_of_light.jpg")no-repeat 50% 50%;*/
-	background-color:  #1F2833;
-	height: 100%;
-	width: 100%;
-	padding-top: 15%;
-}
-
-.class-align-center{
-	width: 38em;
-	margin: 0 auto;
-	border-radius: 5px;
-	text-align: center;
-	background-color: #1F3f38;
-}
-
-#before-proceeding{
-	font-size: 30px;
-	padding-top: 20px;
-	padding-bottom:10px;
-	padding-left: 10px;
-	color: white;
-}
-
-#button-below-text{
-	color: white;
-	padding-bottom:20px;
-	padding-left: 10px;
-	
-}
-
-#index-page-button{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-top:3px;
-	padding-bottom: 3px;
-}
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
