@@ -1,5 +1,6 @@
 html,body{
-	background: url( "https://DemirEvren.github.io/pictures/IMG-20180714-WA0061.jpeg" ) no-repeat, fixed;
+	/*background: url( "https://DemirEvren.github.io/pictures/IMG-20180714-WA0061.jpeg" ) no-repeat, fixed;*/
+	background: url( "../pictures/Evren.jpg" ) no-repeat, fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -131,6 +132,9 @@ img {
 }
 
 
+
+
+	/*!!!   	MEDIA QUERIES     !!!*/
 @media (max-width: 1000px){
 	#breathing_name{
 		display: none;
@@ -155,5 +159,9 @@ img {
 	#outer{
 		width: 100px;
 		margin-top: 4em;
+	}
+
+	#social-media{
+		display: none;
 	}
 }
