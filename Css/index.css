@@ -129,3 +129,31 @@ img {
 	-ms-user-select: none;
 	user-select: none;
 }
+
+
+@media (max-width: 1000px){
+	#breathing_name{
+		display: none;
+	}
+
+	#name{
+		margin: 0 auto;
+		margin-top: 2em;
+		font-size: 30px;
+		padding-left: 30px;
+
+	}
+
+	.navigation-list-item{
+		height: 4em;
+		width: 8em;
+		font-size: 16px;
+		padding: 0.8em;
+		margin-top:4em;
+		float: none;
+	}
+	#outer{
+		width: 100px;
+		margin-top: 4em;
+	}
+}
