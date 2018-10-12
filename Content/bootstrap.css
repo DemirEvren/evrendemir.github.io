@@ -6755,3 +6755,14 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+/* Added by Evren */
+.footerByEvren {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 120px;
+
+}
