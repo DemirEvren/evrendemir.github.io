@@ -6759,10 +6759,9 @@ button.close {
 
 /* Added by Evren */
 .footerByEvren {
-
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
-  line-height: 120px;
+  line-height: 90px;
 
 }
